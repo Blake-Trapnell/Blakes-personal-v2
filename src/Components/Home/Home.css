@@ -1,4 +1,5 @@
 .background {
+    z-index: -1;
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -10,6 +11,7 @@
 }
 
 .background .water {
+    z-index: -1;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -18,5 +20,5 @@
     background-image: url("../../Water-transparent.png");
     background-size: cover;
     background-repeat: no-repeat;
-    filter: url("#turbulence")
+    filter: url("#water")
 }

@@ -8,7 +8,7 @@
 }
 
 .left {
-    height: 60%;
+    height: 100%;
     width: 25%;
     display: flex;
     align-items: center;
@@ -65,11 +65,17 @@
 }
 
 .Contact_Profile_image {
-    height: 150px;
-    width: 150px;
-    margin-top: 10%;
+    background-image: url("../../Pics/profile.jpg");
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    margin-top: 30%;
     margin-bottom: 10%;
     border-radius: 50%;
+}
+
+.Contact_Links {
+    margin: 30px;
 }
 
 .hover:hover {
@@ -107,10 +113,13 @@
     height: 20%;
     width: 80%;
     background-size: cover;
+    background-position: center;
     background-image: url("../../Pics/gameTraders.png");
 }
 
 .Aces-Background {
+    background-size: cover;
+    background-position: center;
     background-image: url("../../Pics/ACC.jpg");
 }
 
@@ -125,6 +134,7 @@
     flex-direction: column;
     align-items: center;
     transition: .5s;
+    position: relative;
 }
 
 .skills-container {

@@ -12,7 +12,7 @@ export default class Information extends Component {
     changeDisplay(key, e) {
         if (e === 0) {
             this.setState({
-                [key]: 1
+                [key]: 300
             })
         }
         else {
@@ -29,7 +29,7 @@ export default class Information extends Component {
             <div className="information-outer">
                 <div style={{ opacity: this.state.displayContact }} className="left">
                     <div className="Contact_Outer">
-                        <img src={require("../../Pics/profile.jpg")} className="Contact_Profile_image"></img>
+                        <div className="Contact_Profile_image"></div>
 
                         <h3 id="email" className="Contact_Links email">Email: <p>
                             BlakeTrapnell.Dev@Gmail.com</p>
@@ -86,7 +86,7 @@ export default class Information extends Component {
                 </div>
                 <div className="right">
                     <div style={{ opacity: this.state.displayProjects }} className="Projects_Outer">
-                        <h1 className="Projects-Title">Projects:</h1>
+                        <h1 style={{fontSize: "3rem"}}className="Projects-Title">Projects:</h1>
                         <div className="Aces-Dungeon-Creator">
                             <div className="Aces-Background">
                             </div>

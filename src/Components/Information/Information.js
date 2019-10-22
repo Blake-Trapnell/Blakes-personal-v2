@@ -42,8 +42,9 @@ export default class Information extends Component {
                         <a style={{ color: "whitesmoke" }} target="_blank" href="https://www.linkedin.com/in/blake-trapnell-0b526495/">
                             <h3 id="linkedin" className="Contact_Links linkedin">LinkedIn Profile: https://www.linkedin.com/in/blake-trapnell-0b526495/</h3>
                         </a>
-
+                            <Link style={{color: "whitesmoke"}} to = "/about">
                         <h1 id="aboutme" className="Contact_Links Aboutme">About me</h1>
+                            </Link>
                     </div>
                 </div>
                 <div className="center">

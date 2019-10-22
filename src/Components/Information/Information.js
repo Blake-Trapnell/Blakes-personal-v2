@@ -34,12 +34,12 @@ export default class Information extends Component {
                         <h3 id="email" className="Contact_Links email">Email: <p>
                             BlakeTrapnell.Dev@Gmail.com</p>
                         </h3>
-                        <a style={{ color: "whitesmoke" }} target="_blank" href="https://github.com/Blake-Trapnell" >
+                        <a rel="noopener noreferrer" style={{ color: "whitesmoke" }} target="_blank" href="https://github.com/Blake-Trapnell" >
                             <h3 id="github" className="Contact_Links github">GitProfile: <p>
                                 https://github.com/Blake-Trapnell</p>
                             </h3>
                         </a>
-                        <a style={{ color: "whitesmoke" }} target="_blank" href="https://www.linkedin.com/in/blake-trapnell-0b526495/">
+                        <a rel="noopener noreferrer" style={{ color: "whitesmoke" }} target="_blank" href="https://www.linkedin.com/in/blake-trapnell-0b526495/">
                             <h3 id="linkedin" className="Contact_Links linkedin">LinkedIn Profile: https://www.linkedin.com/in/blake-trapnell-0b526495/</h3>
                         </a>
                             <Link style={{color: "whitesmoke"}} to = "/about">
@@ -59,29 +59,29 @@ export default class Information extends Component {
                     </div>
                     <div style={{ opacity: this.state.displaySkills }} className="skills-outer">
                         <div className="skills-container">
-                            <a className="down"  target="_blank" href="https://www.javascript.com">
+                            <a rel="noopener noreferrer" className="down"  target="_blank" href="https://www.javascript.com">
                             <div className="skills-logo js-square"></div>
                             </a>
-                            <a className="up" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
+                            <a rel="noopener noreferrer" className="up" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
                             <div className="skills-logo html5"></div>
                             </a>
-                            <a className="down" target="_blank" href="https://reactjs.org/">
+                            <a rel="noopener noreferrer" className="down" target="_blank" href="https://reactjs.org/">
                             <div className="skills-logo react"></div>
                             </a>
-                            <a className="up" target="_blank" href="https://developer.mozilla.org/en-US/docs/Archive/CSS3">
+                            <a rel="noopener noreferrer"  className="up" target="_blank" href="https://developer.mozilla.org/en-US/docs/Archive/CSS3">
                             <div className="skills-logo css3"></div>
                             </a>
-                            <a className="down" target="_blank" href="https://www.adobe.com/products/photoshopfamily.html">
+                            <a rel="noopener noreferrer"  className="down" target="_blank" href="https://www.adobe.com/products/photoshopfamily.html">
                             <div className="skills-logo photoshop"></div>
                             </a>
-                            <a className="up" target ="_blank" href="https://www.adobe.com/products/photoshopfamily.html">
+                            <a rel="noopener noreferrer"  className="up" target ="_blank" href="https://www.adobe.com/products/photoshopfamily.html">
                             <div className="skills-logo postgres"></div>
                             </a>
-                            <a className="down" target="_blank" href="https://www.heroku.com/">
+                            <a rel="noopener noreferrer"  className="down" target="_blank" href="https://www.heroku.com/">
                             <div className="skills-logo heroku"></div>
                             </a>
                         </div>
-                        <a className="node" target="_blank" href="https://nodejs.org/en/about/">
+                        <a rel="noopener noreferrer"  className="node" target="_blank" href="https://nodejs.org/en/about/">
                         </a>
                     </div>
                 </div>
@@ -93,7 +93,7 @@ export default class Information extends Component {
                             </div>
                         </div>
                         <div className="About-Aces-Dungeon-Creator">
-                            <a style={{ color: "whitesmoke", fontSize: "1.5rem" }} href="http://www.acesdungeoncreator.com" target="_blank">
+                            <a rel="noopener noreferrer"  style={{ color: "whitesmoke", fontSize: "1.5rem" }} href="http://www.acesdungeoncreator.com" target="_blank">
                                 <h1 className="Projects-Title">Ace's Dungeon Creator</h1>
                             </a>
                             <h4>A mobile responsive website <p>
@@ -106,7 +106,7 @@ export default class Information extends Component {
                             </div>
                         </div>
                         <div className="About-game-Traders">
-                            <a style={{ color: "whitesmoke", fontSize: "1.5rem" }} href="http://104.248.178.127:4200/#/" target="_blank">
+                            <a rel="noopener noreferrer"  style={{ color: "whitesmoke", fontSize: "1.5rem" }} href="http://104.248.178.127:4200/#/" target="_blank">
                                 <h1 className="Projects-Title">Game Traders</h1>
                             </a>
                             <h4>A Smart rework of the current <p>

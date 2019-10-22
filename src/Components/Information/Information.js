@@ -80,9 +80,8 @@ export default class Information extends Component {
                             <div className="skills-logo heroku"></div>
                             </a>
                         </div>
-                        {/* <a target="_blank" href="https://nodejs.org/en/"> */}
-                        <div className="node"></div>
-                        {/* </a> */}
+                        <a className="node" target="_blank" href="https://nodejs.org/en/about/">
+                        </a>
                     </div>
                 </div>
                 <div className="right">

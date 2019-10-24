@@ -5,19 +5,22 @@ import "./Information.css"
 export default class Information extends Component {
     state = {
         displayContact: 0,
+        contact: false,
         displaySkills: 0,
+        skills: false,
         displayProjects: 0,
+        projects: false,
     }
 
-    changeDisplay(key, e) {
+    changeDisplay(key1, e, key2) {
         if (e === 0) {
             this.setState({
-                [key]: 300
+                [key1]: 1,
             })
         }
         else {
             this.setState({
-                [key]: 0
+                [key1]: 0
             })
         }
 
@@ -30,10 +33,13 @@ export default class Information extends Component {
                 <div style={{ opacity: this.state.displayContact }} className="left">
                     <div className="Contact_Outer">
                         <div className="Contact_Profile_image"></div>
-
+                      
+                        <a rel="noopener noreferrer" style={{ color: "whitesmoke" }} target="_blank"  href="https://mail.google.com/mail/?view=cm&fs=1&to=blaketrapnell.dev@gmail.com">
                         <h3 id="email" className="Contact_Links email">Email: <p>
                             BlakeTrapnell.Dev@Gmail.com</p>
                         </h3>
+                        </a>
+                        
                         <a rel="noopener noreferrer" style={{ color: "whitesmoke" }} target="_blank" href="https://github.com/Blake-Trapnell" >
                             <h3 id="github" className="Contact_Links github">GitProfile: <p>
                                 https://github.com/Blake-Trapnell</p>

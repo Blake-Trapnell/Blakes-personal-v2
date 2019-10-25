@@ -1,4 +1,6 @@
 .About_Outer {
+    z-index: 1;
+    position: relative;
     height: 100%;
     width: 100%;
     overflow: scroll;
@@ -7,6 +9,7 @@
     align-items: center;
     color: whitesmoke;
     font-size: 2rem;
+    text-shadow: 1px 1px 2px darkblue;
 }
 
 .About_Outer::-webkit-scrollbar {

@@ -4,36 +4,24 @@ import "./Information.css"
 
 export default class Information extends Component {
     state = {
-        displayContact: 0,
-        contact: false,
-        displaySkills: 0,
-        skills: false,
-        displayProjects: 0,
-        projects: false,
+        displayContact: false,
+        displaySkills: false,
+        displayProjects: false,
     }
-
-    changeDisplay(key1, e, key2) {
-        if (e === 0) {
+    changeDisplay(key, e) {
             this.setState({
-                [key1]: 1,
+                [key]: !e
             })
-        }
-        else {
-            this.setState({
-                [key1]: 0
-            })
-        }
+      }
 
-    }
 
     render() {
-
         return (
             <div className="information-outer">
-                <div style={{ opacity: this.state.displayContact }} className="left">
+                {this.state.displayContact === true? 
+                <div className="left">
                     <div className="Contact_Outer">
                         <div className="Contact_Profile_image"></div>
-                      
                         <a rel="noopener noreferrer" style={{ color: "whitesmoke" }} target="_blank"  href="https://mail.google.com/mail/?view=cm&fs=1&to=blaketrapnell.dev@gmail.com">
                         <h3 id="email" className="Contact_Links email">Email: <p>
                             BlakeTrapnell.Dev@Gmail.com</p>
@@ -53,6 +41,7 @@ export default class Information extends Component {
                             </Link>
                     </div>
                 </div>
+                : <div className="left"></div> }
                 <div className="center">
                     <div className="center-outer">
                         <h1>Blake Trapnell</h1>
@@ -63,7 +52,10 @@ export default class Information extends Component {
                             <h3 onClick={() => this.changeDisplay("displayProjects", this.state.displayProjects)} className="smaller-text hover">Projects</h3>
                         </div>
                     </div>
-                    <div style={{ opacity: this.state.displaySkills }} className="skills-outer">
+
+                    {this.state.displaySkills === true ? 
+                    
+                    <div  className="skills-outer">
                         <div className="skills-container">
                             <a rel="noopener noreferrer" className="down"  target="_blank" href="https://www.javascript.com">
                             <div className="skills-logo js-square"></div>
@@ -90,10 +82,12 @@ export default class Information extends Component {
                         <a rel="noopener noreferrer"  className="node" target="_blank" href="https://nodejs.org/en/about/">
                         </a>
                     </div>
+                    : <div className="skills-outer"></div> }
                 </div>
+                {this.state.displayProjects === true ?
                 <div className="right">
-                    <div style={{ opacity: this.state.displayProjects }} className="Projects_Outer">
-                        <h1 style={{fontSize: "3rem"}}className="Projects-Title">Projects:</h1>
+                    <div  className="Projects_Outer">
+                        <h1 style={{fontSize: "3rem"}} className="Projects-Title">Projects:</h1>
                         <div className="Aces-Dungeon-Creator">
                             <div className="Aces-Background">
                             </div>
@@ -123,6 +117,7 @@ export default class Information extends Component {
 
                     </div>
                 </div>
+                : <div className="right"></div> }
             </div>
         )
     }

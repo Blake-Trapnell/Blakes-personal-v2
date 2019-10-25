@@ -1,7 +1,22 @@
-.background {
-    z-index: -1;
+.background-outer {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     position: absolute;
     top: 0;
     left: 0;
@@ -11,7 +26,10 @@
 }
 
 .background .water {
-    z-index: -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    ;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -23,15 +41,21 @@
     filter: url("#water")
 }
 
-.background .leaves {
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url("../../Leaves-transparent.png");
+#playbutton {
+    z-index: 2;
+    background-image: url("../../Pics//playbutton.png");
+    position: relative;
+    bottom: 10px;
+    right: 300px;
+    height: 100px;
+    width: 100px;
     background-size: cover;
-    background-repeat: no-repeat;
-    filter: url("#leaves")
+    background-position: center;
+}
+
+#playbutton:hover {
+    height: 110px;
+    width: 110px;
+    transition: .5s;
+    background-image: url("../../Pics//playbuttonhover.png");
 }

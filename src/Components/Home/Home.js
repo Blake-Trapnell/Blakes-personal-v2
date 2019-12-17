@@ -6,7 +6,6 @@ export default class Home extends Component {
         moveWater: false
     }
     handleChange(key, e) {
-        console.log('hit')
         this.setState({
             [key]: !e
         })

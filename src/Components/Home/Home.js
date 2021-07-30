@@ -3,20 +3,17 @@ import "./Home.css"
 
 export default class Home extends Component {
     state = {
-        moveWater: false
+        moveWater: true
     }
     handleChange(key, e) {
         this.setState({
             [key]: !e
         })
-        console.log(this.state)
     }
     
     render() {
         return (
             <div className="background-outer">
-                <div onClick={()=> this.handleChange("moveWater", this.state.moveWater)} id="playbutton"></div>
-
             <div className="background">
                 <div className="water">
                 </div>

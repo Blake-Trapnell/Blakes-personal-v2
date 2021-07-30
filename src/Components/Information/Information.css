@@ -80,16 +80,12 @@
     margin: 30px;
 }
 
-.hover:hover {
-    font-size: 2.5rem;
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 .smaller-text {
     font-size: 2rem;
     font-family: 'Liu Jian Mao Cao', cursive;
     transition-duration: .2s;
+    cursor: pointer;
 }
 
 .Projects_Outer {
